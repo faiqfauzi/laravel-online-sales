@@ -38,7 +38,7 @@ Route::middleware('guest')->group(function () {
     Route::post('/register', [AuthController::class, 'register'])
         ->name('register.store');
 });
-
+#
 // Route logout
 Route::post('/logout', [AuthController::class, 'logout'])
     ->middleware('auth')
